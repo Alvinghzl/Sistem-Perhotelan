@@ -26,6 +26,10 @@ Public Class Jenis_kamar
         Return ""
     End Function
 
+    Public Function resetItem()
+        jenisItem.Clear()
+    End Function
+
     Public ReadOnly Property getjenisItem() As List(Of String)
         Get
             Return jenisItem
@@ -117,6 +121,33 @@ Public Class Jenis_kamar
         Return result
     End Function
 
+    Public Function GetDataKoleksiByIDDatabase(ID As Integer) As List(Of String)
+        Dim result As New List(Of String)
+
+        dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password = " + password + ";" + "database = " + database
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlCommand.CommandText = "SELECT id_jenis_kamar,
+                                  jenis_kamar, 
+                                  harga_permalam,
+                                  jenisitem
+                                  FROM jeniskamar 
+                                  WHERE id_jenis_kamar='" & ID & "'"
+
+        sqlRead = sqlCommand.ExecuteReader
+        While sqlRead.Read
+            result.Add(sqlRead.GetString(0).ToString())
+            result.Add(sqlRead.GetString(1).ToString())
+            result.Add(sqlRead.GetString(2).ToString())
+            result.Add(sqlRead.GetString(3).ToString())
+        End While
+
+        sqlRead.Close()
+        dbConn.Close()
+        Return result
+    End Function
+
+
     Public Function AdddataKoleksiDatabase(jeniskamar As String,
                                            hargakamar As Integer,
                                            jenisitem As String)
@@ -136,13 +167,49 @@ Public Class Jenis_kamar
         sqlRead = sqlCommand.ExecuteReader
         dbConn.Close()
 
-        'Perpustakaan. sqlDt. Load(sqlRead)
         sqlRead.Close()
-        dbConn.Close()
-
-
 
     End Function
 
+    Public Function UpdateDataKoleksiByIDDatabase(ID As Integer,
+                                                  jeniskamar As String,
+                                                  hargakamar As Integer,
+                                                  jenisitem As String)
+
+        dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password = " + password + ";" + "database = " + database
+
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlQuery = "UPDATE jeniskamar SET " &
+                       "jenis_kamar='" & jeniskamar & "', " &
+                       "harga_permalam='" & hargakamar & "', " &
+                       "jenisitem='" & jenisitem & "' " &
+                       "WHERE id_jenis_kamar=" & ID
+
+        sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+
+        sqlRead = sqlCommand.ExecuteReader
+        dbConn.Close()
+        sqlRead.Close()
+
+    End Function
+
+    Public Function DeleteDataKoleksiByIDDatabase(ID As Integer)
+        dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password = " + password + ";" + "database = " + database
+
+
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlQuery = "DELETE FROM jeniskamar WHERE id_jenis_kamar = '" & ID & "'"
+
+        Debug.WriteLine(sqlQuery)
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+            dbConn.Close()
+
+            sqlRead.Close()
+
+    End Function
 
 End Class

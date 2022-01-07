@@ -23,46 +23,46 @@ Partial Class jeniskamar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridJenisKamar = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnHapus = New System.Windows.Forms.Button()
+        Me.BtnTambah = New System.Windows.Forms.Button()
         CType(Me.DataGridJenisKamar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridJenisKamar
         '
         Me.DataGridJenisKamar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridJenisKamar.Location = New System.Drawing.Point(50, 103)
+        Me.DataGridJenisKamar.Location = New System.Drawing.Point(312, 94)
         Me.DataGridJenisKamar.Name = "DataGridJenisKamar"
         Me.DataGridJenisKamar.RowHeadersWidth = 62
         Me.DataGridJenisKamar.RowTemplate.Height = 28
         Me.DataGridJenisKamar.Size = New System.Drawing.Size(516, 200)
         Me.DataGridJenisKamar.TabIndex = 0
         '
-        'Button1
+        'BtnHapus
         '
-        Me.Button1.Location = New System.Drawing.Point(442, 314)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(124, 42)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Hapus"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnHapus.Location = New System.Drawing.Point(692, 314)
+        Me.BtnHapus.Name = "BtnHapus"
+        Me.BtnHapus.Size = New System.Drawing.Size(124, 42)
+        Me.BtnHapus.TabIndex = 1
+        Me.BtnHapus.Text = "Hapus"
+        Me.BtnHapus.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BtnTambah
         '
-        Me.Button2.Location = New System.Drawing.Point(312, 314)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(124, 42)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Tambah"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnTambah.Location = New System.Drawing.Point(312, 314)
+        Me.BtnTambah.Name = "BtnTambah"
+        Me.BtnTambah.Size = New System.Drawing.Size(124, 42)
+        Me.BtnTambah.TabIndex = 2
+        Me.BtnTambah.Text = "Tambah"
+        Me.BtnTambah.UseVisualStyleBackColor = True
         '
         'jeniskamar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(602, 395)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1090, 497)
+        Me.Controls.Add(Me.BtnTambah)
+        Me.Controls.Add(Me.BtnHapus)
         Me.Controls.Add(Me.DataGridJenisKamar)
         Me.Name = "jeniskamar"
         Me.Text = "jeniskamar"
@@ -72,6 +72,6 @@ Partial Class jeniskamar
     End Sub
 
     Friend WithEvents DataGridJenisKamar As DataGridView
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents BtnHapus As Button
+    Friend WithEvents BtnTambah As Button
 End Class
