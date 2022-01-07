@@ -48,7 +48,7 @@ Partial Class Booking
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.id_tamu, Me.id_kamar, Me.check_in, Me.check_out, Me.total_bayar, Me.status})
-        Me.DataGridView1.Location = New System.Drawing.Point(24, 94)
+        Me.DataGridView1.Location = New System.Drawing.Point(24, 87)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
@@ -125,13 +125,13 @@ Partial Class Booking
         'CheckInToolStripMenuItem
         '
         Me.CheckInToolStripMenuItem.Name = "CheckInToolStripMenuItem"
-        Me.CheckInToolStripMenuItem.Size = New System.Drawing.Size(196, 34)
+        Me.CheckInToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.CheckInToolStripMenuItem.Text = "Check In"
         '
         'CheckOutToolStripMenuItem
         '
         Me.CheckOutToolStripMenuItem.Name = "CheckOutToolStripMenuItem"
-        Me.CheckOutToolStripMenuItem.Size = New System.Drawing.Size(196, 34)
+        Me.CheckOutToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.CheckOutToolStripMenuItem.Text = "Check Out"
         '
         'TamuToolStripMenuItem
@@ -144,7 +144,7 @@ Partial Class Booking
         'TambahTamuToolStripMenuItem
         '
         Me.TambahTamuToolStripMenuItem.Name = "TambahTamuToolStripMenuItem"
-        Me.TambahTamuToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.TambahTamuToolStripMenuItem.Size = New System.Drawing.Size(223, 34)
         Me.TambahTamuToolStripMenuItem.Text = "Tambah Tamu"
         '
         'KamarToolStripMenuItem
@@ -170,7 +170,7 @@ Partial Class Booking
         'TambahKamarToolStripMenuItem
         '
         Me.TambahKamarToolStripMenuItem.Name = "TambahKamarToolStripMenuItem"
-        Me.TambahKamarToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.TambahKamarToolStripMenuItem.Size = New System.Drawing.Size(231, 34)
         Me.TambahKamarToolStripMenuItem.Text = "Tambah Kamar"
         '
         'Booking

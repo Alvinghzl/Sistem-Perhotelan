@@ -36,3 +36,16 @@ C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\bin\Debug\System.Nume
 C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.checkout.resources
 C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.vbproj.CopyComplete
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.vbproj.AssemblyReference.cache
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.Booking.resources
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.checkout.resources
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.jeniskamar.resources
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.kamar.resources
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.Resources.resources
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.tambah_jeniskamar.resources
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.tambah_kamar.resources
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.vbproj.GenerateResource.cache
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.vbproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.exe
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.xml
+C:\Users\hp\OneDrive\Documents\sistem-perhotelan2\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.pdb
