@@ -32,7 +32,7 @@ Partial Class tambah_jeniskamar
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(59, 96)
+        Me.Label1.Location = New System.Drawing.Point(21, 96)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(96, 20)
         Me.Label1.TabIndex = 0
@@ -41,7 +41,7 @@ Partial Class tambah_jeniskamar
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(59, 141)
+        Me.Label2.Location = New System.Drawing.Point(21, 144)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(128, 20)
         Me.Label2.TabIndex = 1
@@ -49,21 +49,21 @@ Partial Class tambah_jeniskamar
         '
         'TxtBoxJenisKamar
         '
-        Me.TxtBoxJenisKamar.Location = New System.Drawing.Point(215, 96)
+        Me.TxtBoxJenisKamar.Location = New System.Drawing.Point(185, 96)
         Me.TxtBoxJenisKamar.Name = "TxtBoxJenisKamar"
         Me.TxtBoxJenisKamar.Size = New System.Drawing.Size(302, 26)
         Me.TxtBoxJenisKamar.TabIndex = 3
         '
         'TxtBoxHargaKamar
         '
-        Me.TxtBoxHargaKamar.Location = New System.Drawing.Point(215, 141)
+        Me.TxtBoxHargaKamar.Location = New System.Drawing.Point(185, 141)
         Me.TxtBoxHargaKamar.Name = "TxtBoxHargaKamar"
         Me.TxtBoxHargaKamar.Size = New System.Drawing.Size(302, 26)
         Me.TxtBoxHargaKamar.TabIndex = 4
         '
         'BtnTambah
         '
-        Me.BtnTambah.Location = New System.Drawing.Point(397, 194)
+        Me.BtnTambah.Location = New System.Drawing.Point(367, 203)
         Me.BtnTambah.Name = "BtnTambah"
         Me.BtnTambah.Size = New System.Drawing.Size(120, 40)
         Me.BtnTambah.TabIndex = 6
@@ -74,7 +74,7 @@ Partial Class tambah_jeniskamar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(622, 365)
+        Me.ClientSize = New System.Drawing.Size(552, 302)
         Me.Controls.Add(Me.BtnTambah)
         Me.Controls.Add(Me.TxtBoxHargaKamar)
         Me.Controls.Add(Me.TxtBoxJenisKamar)

@@ -129,6 +129,18 @@
     <Compile Include="checkout.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Daftar.Designer.vb">
+      <DependentUpon>Daftar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Daftar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HapusItem.Designer.vb">
+      <DependentUpon>HapusItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HapusItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="jeniskamar.Designer.vb">
       <DependentUpon>jeniskamar.vb</DependentUpon>
     </Compile>
@@ -136,16 +148,17 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Jenis_kamar.vb" />
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
       <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -158,6 +171,13 @@
     <Compile Include="tambah_jeniskamar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UpdateItem.Designer.vb">
+      <DependentUpon>UpdateItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Booking.resx">
@@ -166,17 +186,28 @@
     <EmbeddedResource Include="checkout.resx">
       <DependentUpon>checkout.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Daftar.resx">
+      <DependentUpon>Daftar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HapusItem.resx">
+      <DependentUpon>HapusItem.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="jeniskamar.resx">
       <DependentUpon>jeniskamar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="tambah_jeniskamar.resx">
       <DependentUpon>tambah_jeniskamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateItem.resx">
+      <DependentUpon>UpdateItem.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +222,9 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-pc-1920x1080-thumbnail_00019.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

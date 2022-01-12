@@ -42,6 +42,8 @@
         End If
 
         ReloadDataTableDatabase()
+        Dim hapus = New HapusItem()
+        hapus.Show()
     End Sub
 
     Private Sub DataGridJenisKamar_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridJenisKamar.CellClick
@@ -52,5 +54,15 @@
 
         idterpilih = selectedRow.Cells(0).Value
         namaterpilih = selectedRow.Cells(1).Value
+    End Sub
+
+    Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles BtnUpdate.Click
+        Dim selecteditem As List(Of String) = JnsKmr.GetDataKoleksiByIDDatabase(idterpilih)
+
+        JnsKmr.GSJenisKamar = selecteditem(1)
+        JnsKmr.GSHarga = selecteditem(2)
+
+        Dim update = New UpdateItem()
+        update.Show()
     End Sub
 End Class

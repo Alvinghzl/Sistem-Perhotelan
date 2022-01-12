@@ -36,3 +36,7 @@ C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\bin\Debug\System.Nume
 C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.checkout.resources
 C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.vbproj.CopyComplete
+C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.HapusItem.resources
+C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.UpdateItem.resources
+C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.Daftar.resources
+C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.Login.resources

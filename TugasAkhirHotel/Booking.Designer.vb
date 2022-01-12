@@ -40,19 +40,22 @@ Partial Class Booking
         Me.TambahKamarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.JenisKamarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TambahKamarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.id_tamu, Me.id_kamar, Me.check_in, Me.check_out, Me.total_bayar, Me.status})
-        Me.DataGridView1.Location = New System.Drawing.Point(24, 94)
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 36)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(1060, 243)
+        Me.DataGridView1.Size = New System.Drawing.Size(1060, 200)
         Me.DataGridView1.TabIndex = 0
         '
         'id
@@ -106,12 +109,11 @@ Partial Class Booking
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BookigToolStripMenuItem, Me.TamuToolStripMenuItem, Me.KamarToolStripMenuItem, Me.JenisKamarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1096, 33)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1171, 33)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -144,7 +146,7 @@ Partial Class Booking
         'TambahTamuToolStripMenuItem
         '
         Me.TambahTamuToolStripMenuItem.Name = "TambahTamuToolStripMenuItem"
-        Me.TambahTamuToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.TambahTamuToolStripMenuItem.Size = New System.Drawing.Size(223, 34)
         Me.TambahTamuToolStripMenuItem.Text = "Tambah Tamu"
         '
         'KamarToolStripMenuItem
@@ -170,14 +172,38 @@ Partial Class Booking
         'TambahKamarToolStripMenuItem
         '
         Me.TambahKamarToolStripMenuItem.Name = "TambahKamarToolStripMenuItem"
-        Me.TambahKamarToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.TambahKamarToolStripMenuItem.Size = New System.Drawing.Size(231, 34)
         Me.TambahKamarToolStripMenuItem.Text = "Tambah Kamar"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("DM Sans", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 259)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(566, 42)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Sistem Reservasi Hotel Grand Hyatt"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.TugasAkhirHotel.My.Resources.Resources.Hotel_Header_Image
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 313)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(812, 116)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
         '
         'Booking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1096, 450)
+        Me.BackgroundImage = Global.TugasAkhirHotel.My.Resources.Resources.desktop_pc_1920x1080_thumbnail_00019
+        Me.ClientSize = New System.Drawing.Size(1171, 442)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -186,6 +212,7 @@ Partial Class Booking
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -209,4 +236,6 @@ Partial Class Booking
     Friend WithEvents check_out As DataGridViewTextBoxColumn
     Friend WithEvents total_bayar As DataGridViewTextBoxColumn
     Friend WithEvents status As DataGridViewTextBoxColumn
+    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
