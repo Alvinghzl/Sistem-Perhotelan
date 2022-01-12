@@ -84,7 +84,7 @@ Partial Class jeniskamar
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkBlue
         Me.BackgroundImage = Global.TugasAkhirHotel.My.Resources.Resources.desktop_pc_1920x1080_thumbnail_00019
-        Me.ClientSize = New System.Drawing.Size(813, 451)
+        Me.ClientSize = New System.Drawing.Size(813, 402)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnUpdate)
         Me.Controls.Add(Me.BtnTambah)

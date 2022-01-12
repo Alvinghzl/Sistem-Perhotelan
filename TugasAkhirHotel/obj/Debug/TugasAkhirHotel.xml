@@ -22,5 +22,10 @@ TugasAkhirHotel
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:TugasAkhirHotel.My.Resources.Resources.desktop_pc_1920x1080_thumbnail_00019">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

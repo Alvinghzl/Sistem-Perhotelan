@@ -41,10 +41,10 @@ Partial Class Booking
         Me.JenisKamarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TambahKamarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        'Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        'CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -127,13 +127,13 @@ Partial Class Booking
         'CheckInToolStripMenuItem
         '
         Me.CheckInToolStripMenuItem.Name = "CheckInToolStripMenuItem"
-        Me.CheckInToolStripMenuItem.Size = New System.Drawing.Size(196, 34)
+        Me.CheckInToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.CheckInToolStripMenuItem.Text = "Check In"
         '
         'CheckOutToolStripMenuItem
         '
         Me.CheckOutToolStripMenuItem.Name = "CheckOutToolStripMenuItem"
-        Me.CheckOutToolStripMenuItem.Size = New System.Drawing.Size(196, 34)
+        Me.CheckOutToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.CheckOutToolStripMenuItem.Text = "Check Out"
         '
         'TamuToolStripMenuItem
@@ -188,13 +188,13 @@ Partial Class Booking
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.TugasAkhirHotel.My.Resources.Resources.Hotel_Header_Image
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 313)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(812, 116)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
+        ''Me.PictureBox1.Image = Global.TugasAkhirHotel.My.Resources.Resources.Hotel_Header_Image
+        'Me.PictureBox1.Location = New System.Drawing.Point(12, 313)
+        'Me.PictureBox1.Name = "PictureBox1"
+        'Me.PictureBox1.Size = New System.Drawing.Size(812, 116)
+        'Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        'Me.PictureBox1.TabIndex = 3
+        'Me.PictureBox1.TabStop = False
         '
         'Booking
         '
@@ -202,7 +202,7 @@ Partial Class Booking
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.TugasAkhirHotel.My.Resources.Resources.desktop_pc_1920x1080_thumbnail_00019
         Me.ClientSize = New System.Drawing.Size(1171, 442)
-        Me.Controls.Add(Me.PictureBox1)
+        'Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -212,7 +212,7 @@ Partial Class Booking
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -237,5 +237,5 @@ Partial Class Booking
     Friend WithEvents total_bayar As DataGridViewTextBoxColumn
     Friend WithEvents status As DataGridViewTextBoxColumn
     Friend WithEvents Label1 As Label
-    Friend WithEvents PictureBox1 As PictureBox
+    'Friend WithEvents PictureBox1 As PictureBox
 End Class
