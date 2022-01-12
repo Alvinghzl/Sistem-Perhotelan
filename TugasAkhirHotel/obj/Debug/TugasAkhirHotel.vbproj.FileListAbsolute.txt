@@ -40,3 +40,5 @@ C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirH
 C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.UpdateItem.resources
 C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.Daftar.resources
 C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.Login.resources
+C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.CheckIn.resources
+C:\Users\ASUS\source\repos\TugasAkhirHotel\TugasAkhirHotel\obj\Debug\TugasAkhirHotel.signout.resources

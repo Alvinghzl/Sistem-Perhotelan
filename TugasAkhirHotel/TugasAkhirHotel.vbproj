@@ -117,10 +117,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Booked.vb" />
     <Compile Include="Booking.Designer.vb">
       <DependentUpon>Booking.vb</DependentUpon>
     </Compile>
     <Compile Include="Booking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn.Designer.vb">
+      <DependentUpon>CheckIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckIn.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="checkout.Designer.vb">
@@ -165,6 +172,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="signout.Designer.vb">
+      <DependentUpon>signout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="signout.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="tambah_jeniskamar.Designer.vb">
       <DependentUpon>tambah_jeniskamar.vb</DependentUpon>
     </Compile>
@@ -182,6 +195,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Booking.resx">
       <DependentUpon>Booking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="checkout.resx">
       <DependentUpon>checkout.vb</DependentUpon>
@@ -202,6 +218,9 @@
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signout.resx">
+      <DependentUpon>signout.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tambah_jeniskamar.resx">
       <DependentUpon>tambah_jeniskamar.vb</DependentUpon>
