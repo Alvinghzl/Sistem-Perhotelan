@@ -93,30 +93,24 @@ Public Class Booked
 
     Public Function AddDataKoleksiDatabase(id_tamu As Integer,
                                            id_kamar As Integer,
-                                           check_in As Date,
-                                           check_out As Date,
-                                           total_bayar As Integer,
-                                           status As String
-                                       )
+                                           check_in As Date
+                                           )
         dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password = " + password + ";" + "database = " + database
-        Dim checkin As String = Format(check_in, "yyyy/MM/dd")
-        Dim checkout As String = Format(check_out, "yyyy/MM/dd")
+        Dim checkin As String = check_in.ToString("yyyy/MM/dd")
+
 
 
         dbConn.Open()
         sqlCommand.Connection = dbConn
-        sqlQuery = "INSERT INTO buking(id_tamu, id_kamar, check_in, check_out,
-                                       total_bayar, status) VALUE(
+        sqlQuery = "INSERT INTO buking(id_tamu, id_kamar, check_in, status) VALUE(
                         '" & id_tamu &
                         "', '" & id_kamar &
-                        "', '" & check_in &
-                        "', '" & checkout &
-                        "', '" & total_bayar &
-                        "', '" & status &
-                        "')"
+                        "', '" & checkin &
+                        "', 'Belum Checkout')"
 
         sqlCommand = New MySqlCommand(sqlQuery, dbConn)
         sqlRead = sqlCommand.ExecuteReader
+
         dbConn.Close()
         'Perpustakaan.sqlDt.Load(sqlRead)
         sqlRead.Close()
@@ -146,24 +140,17 @@ Public Class Booked
         Return result
     End Function
 
-    Public Function UpdateDataKoleksiByIDDatabase(ID As Integer,
-                                                  id_tamu As Integer,
-                                                  id_kamar As Integer,
-                                                  check_in As Date,
+    Public Function checkoutDataKoleksiByIDDatabase(ID As Integer,
                                                   check_out As Date,
-                                                  total_bayar As Integer,
-                                                  status As String
+                                                  total_bayar As Integer
                                                   )
-
+        Dim checkout As String = check_out.ToString("yyyy/MM/dd")
         dbConn.Open()
         sqlCommand.Connection = dbConn
         sqlQuery = "UPDATE buking SET " &
-                       "id_tamu='" & id_tamu & "', " &
-                       "id_kamar='" & id_kamar & "', " &
-                       "check_in='" & check_in & "', " &
-                       "check_out='" & check_out & "', " &
+                       "check_out='" & checkout & "', " &
                        "total_bayar='" & total_bayar & "', " &
-                       "status='" & status & "' " &
+                       "status='Sudah Checkout' " &
                        "WHERE id_booking=" & ID
 
         sqlCommand = New MySqlCommand(sqlQuery, dbConn)
@@ -173,7 +160,43 @@ Public Class Booked
         sqlRead.Close()
     End Function
 
+    Public Function GetDatahargaDatabase(IDKamar As Integer) As Integer
+        Dim result As Integer
 
+        dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password = " + password + ";" + "database = " + database
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlCommand.CommandText = "SELECT 
+                                  harga_permalam
+                                  FROM jeniskamar 
+                                  where id_jenis_kamar=
+                                  (SELECT id_jenis_kamar from kamar where id_kamar= " & IDKamar & ")"
+        sqlRead = sqlCommand.ExecuteReader
 
+        If (sqlRead.Read()) Then
+            result = sqlRead.GetValue(0)
+        End If
+        sqlRead.Close()
+        dbConn.Close()
+        Return result
+    End Function
+
+    Public Function updatekamar(IDKamar As Integer, status As String) As Integer
+        Dim result As Integer
+
+        dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password = " + password + ";" + "database = " + database
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlCommand.CommandText = "UPDATE kamar SET status='" & status & "' where id_kamar= " & IDKamar
+
+        sqlRead = sqlCommand.ExecuteReader
+
+        If (sqlRead.Read()) Then
+            result = sqlRead.GetValue(0)
+        End If
+        sqlRead.Close()
+        dbConn.Close()
+        Return result
+    End Function
 
 End Class

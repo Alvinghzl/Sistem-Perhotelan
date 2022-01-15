@@ -23,13 +23,6 @@ Partial Class Booking
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.id_tamu = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.id_kamar = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.check_in = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.check_out = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.total_bayar = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.status = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.BookigToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CheckInToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,74 +34,24 @@ Partial Class Booking
         Me.JenisKamarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TambahKamarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
-        'Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ButtonChckOut = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
-        'CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.id_tamu, Me.id_kamar, Me.check_in, Me.check_out, Me.total_bayar, Me.status})
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 36)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 36)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(1060, 200)
+        Me.DataGridView1.Size = New System.Drawing.Size(1110, 200)
         Me.DataGridView1.TabIndex = 0
-        '
-        'id
-        '
-        Me.id.HeaderText = "ID"
-        Me.id.MinimumWidth = 8
-        Me.id.Name = "id"
-        Me.id.Width = 150
-        '
-        'id_tamu
-        '
-        Me.id_tamu.HeaderText = "ID Tamu"
-        Me.id_tamu.MinimumWidth = 8
-        Me.id_tamu.Name = "id_tamu"
-        Me.id_tamu.Width = 150
-        '
-        'id_kamar
-        '
-        Me.id_kamar.HeaderText = "ID Kamar"
-        Me.id_kamar.MinimumWidth = 8
-        Me.id_kamar.Name = "id_kamar"
-        Me.id_kamar.Width = 150
-        '
-        'check_in
-        '
-        Me.check_in.HeaderText = "Check In"
-        Me.check_in.MinimumWidth = 8
-        Me.check_in.Name = "check_in"
-        Me.check_in.Width = 150
-        '
-        'check_out
-        '
-        Me.check_out.HeaderText = "Check Out"
-        Me.check_out.MinimumWidth = 8
-        Me.check_out.Name = "check_out"
-        Me.check_out.Width = 150
-        '
-        'total_bayar
-        '
-        Me.total_bayar.HeaderText = "Total Bayar"
-        Me.total_bayar.MinimumWidth = 8
-        Me.total_bayar.Name = "total_bayar"
-        Me.total_bayar.Width = 150
-        '
-        'status
-        '
-        Me.status.HeaderText = "Status"
-        Me.status.MinimumWidth = 8
-        Me.status.Name = "status"
-        Me.status.Width = 150
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BookigToolStripMenuItem, Me.TamuToolStripMenuItem, Me.KamarToolStripMenuItem, Me.JenisKamarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
@@ -127,13 +70,13 @@ Partial Class Booking
         'CheckInToolStripMenuItem
         '
         Me.CheckInToolStripMenuItem.Name = "CheckInToolStripMenuItem"
-        Me.CheckInToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.CheckInToolStripMenuItem.Size = New System.Drawing.Size(196, 34)
         Me.CheckInToolStripMenuItem.Text = "Check In"
         '
         'CheckOutToolStripMenuItem
         '
         Me.CheckOutToolStripMenuItem.Name = "CheckOutToolStripMenuItem"
-        Me.CheckOutToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.CheckOutToolStripMenuItem.Size = New System.Drawing.Size(196, 34)
         Me.CheckOutToolStripMenuItem.Text = "Check Out"
         '
         'TamuToolStripMenuItem
@@ -172,29 +115,28 @@ Partial Class Booking
         'TambahKamarToolStripMenuItem
         '
         Me.TambahKamarToolStripMenuItem.Name = "TambahKamarToolStripMenuItem"
-        Me.TambahKamarToolStripMenuItem.Size = New System.Drawing.Size(231, 34)
-        Me.TambahKamarToolStripMenuItem.Text = "Tambah Kamar"
+        Me.TambahKamarToolStripMenuItem.Size = New System.Drawing.Size(273, 34)
+        Me.TambahKamarToolStripMenuItem.Text = "Tambah Jenis Kamar"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("DM Sans", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 259)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(566, 42)
+        Me.Label1.Size = New System.Drawing.Size(561, 37)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Sistem Reservasi Hotel Grand Hyatt"
         '
-        'PictureBox1
+        'ButtonChckOut
         '
-        ''Me.PictureBox1.Image = Global.TugasAkhirHotel.My.Resources.Resources.Hotel_Header_Image
-        'Me.PictureBox1.Location = New System.Drawing.Point(12, 313)
-        'Me.PictureBox1.Name = "PictureBox1"
-        'Me.PictureBox1.Size = New System.Drawing.Size(812, 116)
-        'Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        'Me.PictureBox1.TabIndex = 3
-        'Me.PictureBox1.TabStop = False
+        Me.ButtonChckOut.Location = New System.Drawing.Point(1011, 256)
+        Me.ButtonChckOut.Name = "ButtonChckOut"
+        Me.ButtonChckOut.Size = New System.Drawing.Size(111, 40)
+        Me.ButtonChckOut.TabIndex = 3
+        Me.ButtonChckOut.Text = "Check Out"
+        Me.ButtonChckOut.UseVisualStyleBackColor = True
         '
         'Booking
         '
@@ -202,7 +144,7 @@ Partial Class Booking
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.TugasAkhirHotel.My.Resources.Resources.desktop_pc_1920x1080_thumbnail_00019
         Me.ClientSize = New System.Drawing.Size(1171, 442)
-        'Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.ButtonChckOut)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -212,7 +154,6 @@ Partial Class Booking
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        'CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -229,13 +170,7 @@ Partial Class Booking
     Friend WithEvents TambahKamarToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents JenisKamarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TambahKamarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents id_tamu As DataGridViewTextBoxColumn
-    Friend WithEvents id_kamar As DataGridViewTextBoxColumn
-    Friend WithEvents check_in As DataGridViewTextBoxColumn
-    Friend WithEvents check_out As DataGridViewTextBoxColumn
-    Friend WithEvents total_bayar As DataGridViewTextBoxColumn
-    Friend WithEvents status As DataGridViewTextBoxColumn
     Friend WithEvents Label1 As Label
+    Friend WithEvents ButtonChckOut As Button
     'Friend WithEvents PictureBox1 As PictureBox
 End Class

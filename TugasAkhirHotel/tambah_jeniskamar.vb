@@ -16,13 +16,12 @@
         jeniskamar.JnsKmr.GSHarga = Integer.Parse(TxtBoxHargaKamar.Text)
 
 
-        Dim converted = jeniskamar.JnsKmr.ConvertKoleksiToString(jeniskamar.JnsKmr.getjenisItem)
         jeniskamar.JnsKmr.AdddataKoleksiDatabase(jeniskamar.JnsKmr.GSJenisKamar,
-                                                 jeniskamar.JnsKmr.GSHarga,
-                                                 converted
+                                                 jeniskamar.JnsKmr.GSHarga
                                                  )
 
         Dim tambahjenis = New jeniskamar
         tambahjenis.Show()
+        Me.Close()
     End Sub
 End Class

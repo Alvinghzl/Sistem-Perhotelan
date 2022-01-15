@@ -30,7 +30,7 @@ Partial Class HapusItem
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(121, 83)
+        Me.Label1.Location = New System.Drawing.Point(121, 80)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(254, 20)
         Me.Label1.TabIndex = 0
@@ -38,7 +38,7 @@ Partial Class HapusItem
         '
         'BtnHapus
         '
-        Me.BtnHapus.Location = New System.Drawing.Point(169, 278)
+        Me.BtnHapus.Location = New System.Drawing.Point(160, 275)
         Me.BtnHapus.Name = "BtnHapus"
         Me.BtnHapus.Size = New System.Drawing.Size(149, 48)
         Me.BtnHapus.TabIndex = 1
@@ -48,10 +48,10 @@ Partial Class HapusItem
         'LblHapus
         '
         Me.LblHapus.AutoSize = True
-        Me.LblHapus.Font = New System.Drawing.Font("! PEPSI !", 22.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblHapus.Location = New System.Drawing.Point(135, 173)
+        Me.LblHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHapus.Location = New System.Drawing.Point(151, 162)
         Me.LblHapus.Name = "LblHapus"
-        Me.LblHapus.Size = New System.Drawing.Size(218, 49)
+        Me.LblHapus.Size = New System.Drawing.Size(158, 52)
         Me.LblHapus.TabIndex = 2
         Me.LblHapus.Text = "Label2"
         '
@@ -59,7 +59,7 @@ Partial Class HapusItem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(505, 450)
+        Me.ClientSize = New System.Drawing.Size(473, 422)
         Me.Controls.Add(Me.LblHapus)
         Me.Controls.Add(Me.BtnHapus)
         Me.Controls.Add(Me.Label1)

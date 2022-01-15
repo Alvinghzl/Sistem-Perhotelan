@@ -136,16 +136,48 @@
     <Compile Include="checkout.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Classkamar.vb" />
+    <Compile Include="Classtamu.vb" />
     <Compile Include="Daftar.Designer.vb">
       <DependentUpon>Daftar.vb</DependentUpon>
     </Compile>
     <Compile Include="Daftar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Editkamar.Designer.vb">
+      <DependentUpon>Editkamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editkamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edittamu.Designer.vb">
+      <DependentUpon>edittamu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edittamu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKamar.Designer.vb">
+      <DependentUpon>FormKamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormKamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HapusItem.Designer.vb">
       <DependentUpon>HapusItem.vb</DependentUpon>
     </Compile>
     <Compile Include="HapusItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HapusKamar.Designer.vb">
+      <DependentUpon>HapusKamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HapusKamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hapustamu.Designer.vb">
+      <DependentUpon>hapustamu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hapustamu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="jeniskamar.Designer.vb">
@@ -183,10 +215,28 @@
     <Compile Include="signout.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TambahKamar.Designer.vb">
+      <DependentUpon>TambahKamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TambahKamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tambah_tamu.Designer.vb">
+      <DependentUpon>tambah_tamu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tambah_tamu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="tambah_jeniskamar.Designer.vb">
       <DependentUpon>tambah_jeniskamar.vb</DependentUpon>
     </Compile>
     <Compile Include="tambah_jeniskamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formtamu.Designer.vb">
+      <DependentUpon>formtamu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formtamu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UpdateItem.Designer.vb">
@@ -210,8 +260,23 @@
     <EmbeddedResource Include="Daftar.resx">
       <DependentUpon>Daftar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Editkamar.resx">
+      <DependentUpon>Editkamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edittamu.resx">
+      <DependentUpon>edittamu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKamar.resx">
+      <DependentUpon>FormKamar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HapusItem.resx">
       <DependentUpon>HapusItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HapusKamar.resx">
+      <DependentUpon>HapusKamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hapustamu.resx">
+      <DependentUpon>hapustamu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="jeniskamar.resx">
       <DependentUpon>jeniskamar.vb</DependentUpon>
@@ -228,8 +293,17 @@
     <EmbeddedResource Include="signout.resx">
       <DependentUpon>signout.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TambahKamar.resx">
+      <DependentUpon>TambahKamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tambah_tamu.resx">
+      <DependentUpon>tambah_tamu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="tambah_jeniskamar.resx">
       <DependentUpon>tambah_jeniskamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formtamu.resx">
+      <DependentUpon>formtamu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateItem.resx">
       <DependentUpon>UpdateItem.vb</DependentUpon>

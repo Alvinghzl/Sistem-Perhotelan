@@ -64,5 +64,6 @@
 
         Dim update = New UpdateItem()
         update.Show()
+        Me.Close()
     End Sub
 End Class

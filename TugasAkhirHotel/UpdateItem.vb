@@ -20,13 +20,14 @@
         jeniskamar.JnsKmr.GSHarga = Integer.Parse(TxtBoxHargaKamar.Text)
 
 
-        Dim converted = jeniskamar.JnsKmr.ConvertKoleksiToString(jeniskamar.JnsKmr.getjenisItem)
-        jeniskamar.JnsKmr.AdddataKoleksiDatabase(jeniskamar.JnsKmr.GSJenisKamar,
-                                                 jeniskamar.JnsKmr.GSHarga,
-                                                 converted
-                                                 )
-        Dim update = New jeniskamar()
-        update.Show()
+
+        jeniskamar.JnsKmr.UpdateDataKoleksiByIDDatabase(jeniskamar.idterpilih,
+                                                        jeniskamar.JnsKmr.GSJenisKamar,
+                                                        jeniskamar.JnsKmr.GSHarga
+                                                        )
+
+
+
 
         Me.Close()
     End Sub

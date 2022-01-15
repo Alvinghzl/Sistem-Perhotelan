@@ -40,8 +40,7 @@
     End Sub
 
     Private Sub Login_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        TextBoxUser.Text = 1
-        TextBoxPassword.Text = 1
+
 
     End Sub
 

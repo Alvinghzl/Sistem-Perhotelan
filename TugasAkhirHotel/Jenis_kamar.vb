@@ -2,7 +2,7 @@
 Imports MySql.Data.MySqlClient
 Public Class Jenis_kamar
 
-    Private IdKamar As Integer
+    Private Id_jens_Kamar As Integer
     Private JenisKamar As String
     Private Harga As Integer
     Private Jenis As New List(Of String)
@@ -36,12 +36,12 @@ Public Class Jenis_kamar
         End Get
     End Property
 
-    Public Property GSIdKamar() As String
+    Public Property GSId_jenisKamar() As String
         Get
-            Return IdKamar
+            Return Id_jens_Kamar
         End Get
         Set(ByVal value As String)
-            IdKamar = value
+            Id_jens_Kamar = value
         End Set
     End Property
 
@@ -63,42 +63,30 @@ Public Class Jenis_kamar
         End Set
     End Property
 
-    Public Function AddKoleksiDataTable(IDRoom As Integer,
-                                        JenisRoom As String,
-                                        HargaRoom As Integer
-                                        )
-
-        DataTable.Add({IDRoom,
-                      JenisRoom,
-                      HargaRoom
-                      })
-
-    End Function
-
     Public ReadOnly Property getKoleksiDataTable() As ArrayList
         Get
             Return DataTable
         End Get
     End Property
 
-    Public Function ConvertKoleksiToString(vals As List(Of String))
-        Dim builder As StringBuilder = New StringBuilder()
-        For Each val As String In vals
-            builder.Append(val).Append("|")
-        Next
+    'Public Function ConvertKoleksiToString(vals As List(Of String))
+    '    Dim builder As StringBuilder = New StringBuilder()
+    '    For Each val As String In vals
+    '        builder.Append(val).Append("|")
+    '    Next
 
-        ' Convert to string.
-        Dim res = builder.ToString()
-        Return res
-    End Function
+    '    ' Convert to string.
+    '    Dim res = builder.ToString()
+    '    Return res
+    'End Function
 
-    Public Function ConvertStringToKoleksi(value As String)
-        Dim arr() As String = value.Split("|")
+    'Public Function ConvertStringToKoleksi(value As String)
+    '    Dim arr() As String = value.Split("|")
 
-        ' Convert to List.
-        Dim vals As List(Of String) = arr.ToList()
-        Return vals
-    End Function
+    '    ' Convert to List.
+    '    Dim vals As List(Of String) = arr.ToList()
+    '    Return vals
+    'End Function
 
     Public Function GetDataKoleksiDatabase() As DataTable
         Dim result As New DataTable
@@ -108,7 +96,7 @@ Public Class Jenis_kamar
         dbConn.Open()
 
         sqlCommand.Connection = dbConn
-        sqlCommand.CommandText = "SELECT id_jenis_kamar AS 'ID Kamar',
+        sqlCommand.CommandText = "SELECT id_jenis_kamar AS 'ID Jenis Kamar',
                                   jenis_kamar as 'Jenis Kamar',
                                   harga_permalam AS 'Harga Permalam'
                                   FROM jeniskamar"
@@ -129,8 +117,7 @@ Public Class Jenis_kamar
         sqlCommand.Connection = dbConn
         sqlCommand.CommandText = "SELECT id_jenis_kamar,
                                   jenis_kamar, 
-                                  harga_permalam,
-                                  jenisitem
+                                  harga_permalam
                                   FROM jeniskamar 
                                   WHERE id_jenis_kamar='" & ID & "'"
 
@@ -139,7 +126,6 @@ Public Class Jenis_kamar
             result.Add(sqlRead.GetString(0).ToString())
             result.Add(sqlRead.GetString(1).ToString())
             result.Add(sqlRead.GetString(2).ToString())
-            result.Add(sqlRead.GetString(3).ToString())
         End While
 
         sqlRead.Close()
@@ -149,8 +135,7 @@ Public Class Jenis_kamar
 
 
     Public Function AdddataKoleksiDatabase(jeniskamar As String,
-                                           hargakamar As Integer,
-                                           jenisitem As String)
+                                           hargakamar As Integer)
 
         dbConn.ConnectionString = "server =" + server + ";" + "user id =" + username + ";" + "password =" + password + ";" + "database =" + database
 
@@ -158,10 +143,9 @@ Public Class Jenis_kamar
         dbConn.Open()
         sqlCommand.Connection = dbConn
         sqlQuery = "INSERT INTO jeniskamar (jenis_kamar,
-                        harga_permalam, jenisitem) VALUE(
+                        harga_permalam) VALUE(
             '" & jeniskamar & "',
-            '" & hargakamar & "',
-            '" & jenisitem & "')"
+            '" & hargakamar & "')"
 
         sqlCommand = New MySqlCommand(sqlQuery, dbConn)
         sqlRead = sqlCommand.ExecuteReader
@@ -173,8 +157,7 @@ Public Class Jenis_kamar
 
     Public Function UpdateDataKoleksiByIDDatabase(ID As Integer,
                                                   jeniskamar As String,
-                                                  hargakamar As Integer,
-                                                  jenisitem As String)
+                                                  hargakamar As Integer)
 
         dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password = " + password + ";" + "database = " + database
 
@@ -182,8 +165,7 @@ Public Class Jenis_kamar
         sqlCommand.Connection = dbConn
         sqlQuery = "UPDATE jeniskamar SET " &
                        "jenis_kamar='" & jeniskamar & "', " &
-                       "harga_permalam='" & hargakamar & "', " &
-                       "jenisitem='" & jenisitem & "' " &
+                       "harga_permalam='" & hargakamar & "' " &
                        "WHERE id_jenis_kamar=" & ID
 
         sqlCommand = New MySqlCommand(sqlQuery, dbConn)

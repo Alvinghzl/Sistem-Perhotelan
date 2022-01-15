@@ -82,25 +82,27 @@ Public Class User
     End Function
 
 
-    Public Function AddUsersDatabase(Username_regist As String, password_regist As String)
+    Public Function AddUsersDatabase(Username_regist As String, password_regist As String, email_regist As String)
 
-        Dim today = Date.Now()
 
-            dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password = " + password + ";" + "database = " + database
-            dbConn.Open()
-            sqlCommand.Connection = dbConn
-            sqlQuery = "INSERT INTO users(username, password, registered_at) VALUE('" &
+
+        dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password = " + password + ";" + "database = " + database
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlQuery = "INSERT INTO users(username, password, email) VALUE('" &
                         Username_regist & "', '" &
                         EncryptMD5(password_regist) & "', '" &
-                        today.ToString("yyyy/MM/dd") & "')"
+                        email_regist & "' )"
 
-            Debug.WriteLine(sqlQuery)
 
-            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
-            sqlRead = sqlCommand.ExecuteReader
 
-            sqlRead.Close()
-            dbConn.Close()
+        Debug.WriteLine(sqlQuery)
+
+        sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+        sqlRead = sqlCommand.ExecuteReader
+
+        sqlRead.Close()
+        dbConn.Close()
 
     End Function
 
