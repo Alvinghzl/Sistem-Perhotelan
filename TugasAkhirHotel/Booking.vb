@@ -1,4 +1,6 @@
-﻿Public Class Booking
+﻿'Alvinghzl Pusing Sendirian Parah Banget Dah
+
+Public Class Booking
 
     Public Shared cbooked As New Booked
     Public Shared Idterpilih As Nullable(Of Integer)
