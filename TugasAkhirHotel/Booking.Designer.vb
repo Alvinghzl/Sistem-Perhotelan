@@ -35,6 +35,7 @@ Partial Class Booking
         Me.TambahKamarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ButtonChckOut = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -42,7 +43,7 @@ Partial Class Booking
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 36)
+        Me.DataGridView1.Location = New System.Drawing.Point(19, 50)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
@@ -138,12 +139,23 @@ Partial Class Booking
         Me.ButtonChckOut.Text = "Check Out"
         Me.ButtonChckOut.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Brown
+        Me.Button1.Location = New System.Drawing.Point(1025, 4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(86, 40)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Logout"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Booking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.TugasAkhirHotel.My.Resources.Resources.desktop_pc_1920x1080_thumbnail_00019
         Me.ClientSize = New System.Drawing.Size(1171, 442)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonChckOut)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
@@ -172,5 +184,6 @@ Partial Class Booking
     Friend WithEvents TambahKamarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Friend WithEvents ButtonChckOut As Button
+    Friend WithEvents Button1 As Button
     'Friend WithEvents PictureBox1 As PictureBox
 End Class

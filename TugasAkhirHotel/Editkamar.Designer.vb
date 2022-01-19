@@ -23,10 +23,13 @@ Partial Class Editkamar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.BtnEdit = New System.Windows.Forms.Button()
-        Me.TextBoxNamaKamar = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBoxJenisKamar = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ButtonPilih = New System.Windows.Forms.Button()
+        Me.TextBoxKamar = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBoxJenis = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnEdit
@@ -38,58 +41,83 @@ Partial Class Editkamar
         Me.BtnEdit.Text = "Edit"
         Me.BtnEdit.UseVisualStyleBackColor = True
         '
-        'TextBoxNamaKamar
+        'ButtonPilih
         '
-        Me.TextBoxNamaKamar.Location = New System.Drawing.Point(25, 138)
-        Me.TextBoxNamaKamar.Name = "TextBoxNamaKamar"
-        Me.TextBoxNamaKamar.Size = New System.Drawing.Size(271, 26)
-        Me.TextBoxNamaKamar.TabIndex = 9
+        Me.ButtonPilih.Location = New System.Drawing.Point(320, 87)
+        Me.ButtonPilih.Name = "ButtonPilih"
+        Me.ButtonPilih.Size = New System.Drawing.Size(78, 32)
+        Me.ButtonPilih.TabIndex = 17
+        Me.ButtonPilih.Text = "Pilih"
+        Me.ButtonPilih.UseVisualStyleBackColor = True
         '
-        'Label2
+        'TextBoxKamar
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(21, 103)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 20)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Nama Kamar"
+        Me.TextBoxKamar.Location = New System.Drawing.Point(29, 173)
+        Me.TextBoxKamar.Name = "TextBoxKamar"
+        Me.TextBoxKamar.Size = New System.Drawing.Size(271, 26)
+        Me.TextBoxKamar.TabIndex = 15
         '
-        'TextBoxJenisKamar
+        'Label3
         '
-        Me.TextBoxJenisKamar.Location = New System.Drawing.Point(25, 53)
-        Me.TextBoxJenisKamar.Name = "TextBoxJenisKamar"
-        Me.TextBoxJenisKamar.Size = New System.Drawing.Size(271, 26)
-        Me.TextBoxJenisKamar.TabIndex = 7
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(34, 150)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(101, 20)
+        Me.Label3.TabIndex = 14
+        Me.Label3.Text = "Nama Kamar"
         '
-        'Label1
+        'TextBoxJenis
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 18)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 20)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Jenis Kamar"
+        Me.TextBoxJenis.Enabled = False
+        Me.TextBoxJenis.Location = New System.Drawing.Point(29, 88)
+        Me.TextBoxJenis.Name = "TextBoxJenis"
+        Me.TextBoxJenis.Size = New System.Drawing.Size(271, 26)
+        Me.TextBoxJenis.TabIndex = 13
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(25, 53)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(96, 20)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Jenis Kamar"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(547, 23)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 62
+        Me.DataGridView1.RowTemplate.Height = 28
+        Me.DataGridView1.Size = New System.Drawing.Size(507, 455)
+        Me.DataGridView1.TabIndex = 11
         '
         'Editkamar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(398, 450)
+        Me.ClientSize = New System.Drawing.Size(1084, 583)
+        Me.Controls.Add(Me.ButtonPilih)
+        Me.Controls.Add(Me.TextBoxKamar)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TextBoxJenis)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BtnEdit)
-        Me.Controls.Add(Me.TextBoxNamaKamar)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBoxJenisKamar)
-        Me.Controls.Add(Me.Label1)
         Me.Name = "Editkamar"
         Me.Text = "Editkamar"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents BtnEdit As Button
-    Friend WithEvents TextBoxNamaKamar As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBoxJenisKamar As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents ButtonPilih As Button
+    Friend WithEvents TextBoxKamar As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBoxJenis As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

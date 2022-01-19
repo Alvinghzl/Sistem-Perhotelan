@@ -325,5 +325,8 @@
   <ItemGroup>
     <None Include="Resources\desktop-pc-1920x1080-thumbnail_00019.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\264-2640924_log-out-icon-red.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

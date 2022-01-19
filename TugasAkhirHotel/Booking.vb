@@ -1,6 +1,4 @@
-﻿'Alvinghzl Pusing Sendirian Parah Banget Dah
-
-Public Class Booking
+﻿Public Class Booking
 
     Public Shared cbooked As New Booked
     Public Shared Idterpilih As Nullable(Of Integer)
@@ -72,8 +70,6 @@ Public Class Booking
         ReloadDataTableDatabase()
     End Sub
 
-
-
     Private Sub ButtonChckOut_Click(sender As Object, e As EventArgs) Handles ButtonChckOut.Click
         Dim chkout = New checkout()
         chkout.Show()
@@ -87,5 +83,11 @@ Public Class Booking
         Idterpilih = selectedRow.Cells(0).Value
         checkinterpilih = selectedRow.Cells(3).Value
         idkamartepilih = selectedRow.Cells(2).Value
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim logout = New signout()
+        logout.Show()
+        Me.Close()
     End Sub
 End Class
